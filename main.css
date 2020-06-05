@@ -4,22 +4,32 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+   
 }
 nav{
-    background-color: rgb(34, 36, 49);
+    background-color: #ddb56e;    
     height: 80px;
+    z-index: 9999;
     width: 100%;
+    position: fixed;
+    border-top: 4px solid  #2d2d2d;
+    text-shadow: 0.5px .5px  black;
+    opacity: 0.9;
+   
 }
 label.logo{
-    color: white;
+    color:  #2d2d2d;
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
     font-family: arial;
+    text-shadow: black;
     
 }
 nav ul{
@@ -33,19 +43,24 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: white;
-    font-size: 17px;
+    color: #2d2d2d;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 7px 13px;
-    border-radius: 3px;
+   
+    text-decoration:none;
+}
+nav ul li a:hover{
+     background-color: #2d2d2d;
+    color:   #ddb56e;    transition: .8s;
+    text-decoration: none;
 }
 a.active,a:hover{
-    background-color: white;
-    color:  rgb(34, 36, 49);
-    transition: .8s;
+    background-color: #2d2d2d;
+    color:   #ddb56e;    transition: .8s;
 }
 .checkbtn{
-    color: white;
+    color: #2d2d2d;
     font-size: 30px;
     float:right;
     line-height: 80px;
@@ -61,22 +76,36 @@ label.logo{
 font-size: 30px;
 padding-left: 50px;    
 }
+nav{
+    background-color: #ddb56e;    height: 70px;
+    width: 100%;
+    position: fixed;
+    
+}
 nav ul li a{
     font-size: 16px;
 }
-
 }
-@media (max-width: 952px){
+@media (max-width: 858px){
 .checkbtn{
     display: block;
 
+}
+.display-1{
+
+    font-size: 28px;
+}
+nav{
+    background-color: #ddb56e;    height: 60px;
+    width: 100%;
+    position: fixed;
+    opacity: 0.9;
 }
 ul{
     position: fixed;
     width: 100%;
     height: auto;
-    background-color:rgb(34, 36, 49);
-    top: 80px;
+    background-color:#ddb56e;    top: 60px;
     left: -100%;
     transition: all .5s;
     text-align: center;
@@ -87,9 +116,347 @@ nav ul li{
    line-height: 30px;
 }
 nav ul li a{
-    font-size: 20px;
+    font-size: 20px;  
 }
 #check:checked ~ ul{
     left:0;
 }
+
+
 }
+@media (max-width: 768px){
+    .checkbtn{
+        display: block;
+        font-size: 25px;
+        line-height: 50px;
+
+    
+    }
+    .our-product{
+        background-color: #2d2d2d;
+        height: 300px;
+    }
+    .img-fluid{
+        align-items: center;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+    
+    .yellow{
+        margin-right: 20px;
+    }
+    .display-2{
+
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .small-banner{
+        margin-top: 20px;
+    }
+    .display-1{
+
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .main1{
+        margin-top: 10px;
+       
+    
+        
+    }
+    .img-responsive
+    {
+        margin-top: 10px;
+        
+    }
+    nav{
+        background-color: #ddb56e;        height: 45px;
+        width: 100%;
+        position: fixed;
+        opacity: 0.9;
+    }
+ 
+    ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color:#ddb56e;        top: 45px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+    }
+    nav ul li{
+       display: block;
+       margin: 40px 0;
+       line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    label.logo{
+        color: white;
+        font-size: 20px;
+        line-height: 50px;
+        padding: 0 70px;
+        font-weight: bold;
+        font-family: arial;
+        
+    }
+    
+}
+
+section{
+
+  
+  background: url(images/logo+_upscaled_image_x4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 45%;
+  width: 100%;
+
+  
+  
+}
+.small-banner
+{
+    background-color: #2d2d2d;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color:  #ddb56e;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #2d2d2d ;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.main1{
+    margin-top: 50px;
+    transition: 0.5s;
+    
+
+    
+}
+.img-responsive
+{
+    margin-top: 20px;
+    
+}
+.display-1{
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #ddb56e;   
+     text-shadow: 2px 2px 2px #2d2d2d;
+     font-family: 'Times New Roman', Times, serif;
+     text-transform: capitalize;
+    }
+
+
+.grey {
+     margin:10px 10px 0px 0px;
+     padding:10px; 
+    background-color: #2d2d2d;
+    color: #ddb56e;    text-transform:uppercase;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 3px solid  #ddb56e; width: 100%;
+    box-shadow: 4px 4px  5px black;
+}
+
+.yellow { 
+    margin:10px 10px 0px 0px; 
+    padding:10px; 
+    background-color:  #ddb56e;    color: #2d2d2d;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-top: 2px solid #2d2d2d;
+    border-right: 2px solid #2d2d2d;
+    border-left: 2px solid #2d2d2d;
+    border-radius: 10px;
+width: 100%;}
+.gly
+{
+    font-size: 100px;
+}
+hr {
+    
+    margin-left: 2em;
+margin-right: 2em; }
+
+.hr-yellow
+{
+    border: 1px solid  #ddb56e;}
+.hr-grey
+{
+    border: 1px solid  #2d2d2d;
+}
+.loader{
+
+    position: fixed;
+    top: 0;width: 100%;
+    left: 0;
+    background-color:#ddb56e;  
+      height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    border-radius: 0px;
+    color:#ddb56e;    
+    ;
+    color: transparent;
+    
+}
+.button{
+    font-size: 30px; 
+    color:#ddb56e; 
+    border: 2px solid #ddb56e;
+    box-shadow: 2px 2px 2px #ddb56e;
+
+}
+.button:hover
+{
+color:#2d2d2d;
+background-color:#ddb56e;
+border: 1px solid   #2d2d2d;
+box-shadow: 2px 2px 2px 2px #2d2d2d;
+}
+.our-product
+{
+    background-color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+}
+.products{
+ 
+    margin-top: 10rem
+}
+.small-produts:hover
+{
+    margin: 2px 2px 0px 0px;
+    transition: .5s;
+}
+.img-fluid
+{
+    max-width: 100%;
+    height: auto;
+}
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  .product-text
+  {
+      color:  #ddb56e;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      margin-top: 50px;
+    
+  }
+  .display-3
+  {
+    color:  #ddb56e;
+    text-align: center;
+        padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+
+
+
+.roww {
+    margin: 8px 0px 0px -16px;
+    margin-top: 90px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .roww,
+  .roww > .columnw {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .columnw {
+    float: left;
+    width: 25%;
+
+    
+  }
+  
+  /* Clear floats after rows */ 
+  .roww:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .contentw {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #ddb56e;
+    background-color: #2d2d2d;
+    color: #ddb56e;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px 2px #2d2d2d;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .columnw {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .columnw {
+      width: 100%;
+    }
+  }
+  
+  .mdb-color, .mdb-color>a
+  {
+      background-color: #2d2d2d;
+      color: #ddb56e;
+      text-decoration: none;
+    
+  }
+  .mb-4>a{
+    color: #ddb56e;
+  }
+  
+  footer{
+      margin-top: 70px;
+      border-top: 5px solid #ddb56e;
+      box-shadow: 3px black;
+  }
