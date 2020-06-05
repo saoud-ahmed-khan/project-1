@@ -16,4 +16,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./ bootcamp_setup_ziakhan.surge.sh --token ${{ secrets.MY_SECRETS }}
+        run: surge ./ saoud_proj-1.surge.sh --token ${{ secrets.MY_SECRETS }}
